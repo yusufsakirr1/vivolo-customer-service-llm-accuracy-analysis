@@ -1,0 +1,157 @@
+HERA AI KONUŞMA ANALİZ PROMTU - V7.0 (Sentiment İyileştirilmiş)
+
+GÖREV: Hera yapay zeka asistanı ile konuşan kullanıcıların tüm konuşmasını analiz et ve şu 3 kriterde değerlendir:
+1. TOPIC (Konuşma konusu kategorisi)
+2. SENTIMENT (Kullanıcının genel duygu durumu)  
+3. BOT_ANSWERED (Bot başarılı şekilde yardım edebildi mi?)
+
+ANALİZ YÖNTEMİ:
+1. İLK 2 KULLANICI MESAJINI öncelikli analiz et
+2. CONSTRAINED CLASSIFICATION - sadece tanımlı kategorilerden seç
+3. Net sinyal yoksa confidence düşük → "Genel Soru"
+4. Bot'un final yanıt kalitesini değerlendir
+
+🎯 TOPIC CLASSIFICATION - İLK 2 MESAJDAN ETKİNLİK TESPİTİ:
+
+**GEÇERLİ TOPIC LİSTESİ (V4 Tabanlı):**
+Ana Etkinlikler: düğün, kına, nişan, sünnet, mezuniyet, balayı, nikah, other
+Alt Kategoriler: /mekan, /abiye, /organizasyon, /fotoğrafçı, /nişanlık
+
+**TOPIC KURALLARI:**
+
+1. **ÖNCE ETKİNLİK TESPİT ET:**
+   - Düğün kelimeleri: "düğün", "evlilik", "gelin", "damat" → "düğün"
+   - Kına kelimeleri: "kına", "kına gecesi" → "kına" 
+   - Nişan kelimeleri: "nişan", "söz", "isteme" → "nişan"
+   - Sünnet kelimeleri: "sünnet", "sünnet düğünü" → "sünnet"
+   - Mezuniyet kelimeleri: "mezuniyet", "graduation", "mezun" → "mezuniyet"
+   - Balayı kelimeleri: "balayı", "honeymoon" → "balayı"
+   - Nikah kelimeleri: "nikah", "nikah töreni" → "nikah"
+
+2. **SONRA ALT KATEGORİ EKLE:**
+   - Mekan vurgusu: "mekan", "salon", "yer", "nerede" → "/mekan"
+   - Abiye vurgusu: "abiye", "elbise", "kıyafet" → "/abiye" 
+   - Organizasyon vurgusu: "organizasyon", "planlama", "hazırlık" → "/organizasyon"
+   - Fotoğraf vurgusu: "fotoğrafçı", "çekim", "foto" → "/fotoğrafçı"
+   - Nişanlık vurgusu: "nişanlık", "nişan elbisesi" → "/nişanlık"
+
+3. **FINAL FORMAT:**
+   - Etkinlik + alt kategori → "etkinlik/kategori" (örn: "düğün/mekan")
+   - Sadece etkinlik → "etkinlik" (örn: "düğün")
+   - Belirsiz/anlaşılmayan → "other"
+
+**KELİME EŞLEŞTİRME REHBERİ:**
+
+ETKİNLİK TESPİTİ:
+- "düğün/evlilik/gelin/damat" → düğün
+- "nişan/söz" → nişan  
+- "kına/kına gecesi" → kına
+- "sünnet/circumcision" → sünnet
+- "balayı/honeymoon" → balayı
+- "nikah/nikah merasimi" → nikah
+- "mezuniyet/graduation/mezun" → mezuniyet
+- "bekarlığa veda/bachelor party/bekarlığa veda partisi" → bekarlığa_veda
+
+KATEGORİ TESPİTİI:
+- "salon/mekan/venue/yer" → mekan
+- "abiye/elbise/dress" → abiye
+- "nişanlık/nişan elbisesi" → nişanlık
+- "gelinlik/wedding dress/gelin elbisesi" → gelinlik
+- "organizasyon/organization/planlama" → organizasyon
+- "kuaför/hair/saç/makeup" → kuaför
+
+🔵 SENTIMENT ANALİZİ - KULLANICI DUYGUSAL DURUMU:
+
+**⚠️ DİKKAT: %80+ konuşma NÖTR olmalı - İnsanlar çoğunlukla sadece bilgi/hizmet arıyor**
+
+**NÖTR** - Normal hizmet arayışı (VARSAYILAN):
+- Soru sorma: "arıyorum", "istiyorum", "ihtiyacım var", "var mı?"
+- Bilgi talebi: "nasıl", "nerede", "ne zaman", "kaç para", "fiyat"
+- Selamlaşma: "merhaba", "selam" (rutin)
+- Etkinlik belirtme: "düğün", "nişan", "kına" (sadece kategori söyleme)
+- Yer/tarih/sayı belirtme: "Ankara", "100 kişi", "Ağustos" (bilgi verme)
+- Tek kelime yanıtlar: "tamam", "evet", "hayır"
+- VARSAYILAN: Şikayet veya özel memnuniyet yoksa → NÖTR
+
+**POZİTİF** - Açık memnuniyet/heyecan (SADECE BELİRGİN DURUMLAR):
+- Teşekkür ifadeleri: "teşekkürler", "sağ olun", "çok yardımcı oldunuz"
+- Beğeni ifadeleri: "beğendim", "hoşuma gitti", "tam istediğim"
+- Heyecan: "harika", "mükemmel", "süper", "çok güzel"
+- Memnuniyet: "buldum aradığımı", "çok iyi", "kesinlikle olur"
+
+**NEGATİF** - Açık şikayet/sorun (NADİR):
+- Doğrudan şikayet: "kötü", "berbat", "beğenmedim", "memnun değilim"  
+- Hayal kırıklığı: "istediğim bulamadım", "beklediğim gibi değil"
+- Problem: "bulamıyorum", "çalışmıyor", "yanlış"
+- Olumsuz duygular: "üzgünüm", "sinir oldum", "canım sıkıldı"
+
+🤖 BOT_ANSWERED - KONUŞMA BAŞARISI DEĞERLENDİRMESİ:
+
+**TEMEL KURAL: BOT KULLANICININ İHTİYACINA CEVAP VEREBİLDİ Mİ?**
+
+**EVET** - Bot başarılı, kullanıcı ihtiyacını karşıladı:
+- PLACE_ID içeren somut mekan önerileri sundu
+- Website/firma önerileri verdi (trendyol, sahibinden vb.)
+- Kullanıcı memnuniyeti ifade etti ("teşekkür", "yardımcı oldunuz")
+- Bot soru-cevap döngüsünü tamamladı, bilgi topladı
+- Alternatif çözümler önerdi ("bu kriterlerde bulamadım ama şu seçenekler var")
+- Konuşma doğal akışında devam etti ve sonuçlandı
+
+**HAYIR** - Bot başarısız, kullanıcı ayrıldı:
+- Bot hiç somut öneri/sonuç sunamadı
+- "Sonuç bulunamadı" deyip alternatif önermedi  
+- Bot anlayamadı, kullanıcı tekrar açıklama yapmak zorunda kaldı
+- Kullanıcı cevap vermeden konuşmayı bıraktı
+- Bot sadece soru sordu, hiç yanıt/öneri vermedi
+- Konuşma yarıda kesildi, tamamlanmadı
+- Bot "bu konuda yardımcı olamam" deyip yönlendirmedi
+
+**ÖZEL DURUMLAR:**
+- Bot "kriterler uygun değil" dese bile sonra alternatif bulduysa → EVET
+- Kullanıcı "teşekkür" dese bile bot hiç öneri vermediyse → HAYIR
+- Konuşma tek soru-cevapla bittiyse ve kullanıcı memnunsa → EVET
+
+ÖNEMLİ KURALLAR:
+- "Conversation resolved automatically" = Sistem mesajı, BOT DEĞİL
+- Son bot mesajı başarısızlık → HAYIR
+- Kullanıcı teşekkür → genellikle EVET
+- Bot somut öneri/liste → EVET
+- "sünnet düğünü" ifadesi → sünnet kategorisine dahil
+- Konuşma bağlamını analiz et: eğer ilk mesajda bir etkinlik belirtilip sonraki mesajlarda farklı kelimeler kullanılıyorsa (örn. "düğün" sonrası "kardeşimin düğünü") ilk mesajdaki etkinlik kategorisini öncelikle dikkate al
+
+ÖRNEK ANALİZLER:
+
+ÖRNEK 1 - ETKİNLİK + KATEGORİ:
+Kullanıcı: "Nişan mekanı Ankara 150 kişi"  
+→ {"topic": "nişan/mekan", "sentiment": "Nötr", "bot_answered": "Evet"}
+
+ÖRNEK 2 - ETKİNLİK + KATEGORİ:
+Kullanıcı: "Düğün fotoğrafçısı lazım"
+Bot: "Maalesef uygun fotoğrafçı bulamadık"
+→ {"topic": "düğün/fotoğrafçı", "sentiment": "Nötr", "bot_answered": "Hayır"}
+
+ÖRNEK 3 - ETKİNLİK + KATEGORİ:
+Kullanıcı: "Sünnet organizasyonu yapmak istiyorum"
+→ {"topic": "sünnet/organizasyon", "sentiment": "Nötr", "bot_answered": "Evet"}
+
+ÖRNEK 4 - SADECE ETKİNLİK:
+Kullanıcı: "Balayı planlıyorum"
+→ {"topic": "balayı", "sentiment": "Nötr", "bot_answered": "Evet"}
+
+ÖRNEK 5 - SADECE KATEGORİ:
+Kullanıcı: "Abiye arıyorum"
+→ {"topic": "abiye", "sentiment": "Nötr", "bot_answered": "Evet"}
+
+ÖRNEK 6 - HİÇBİRİ YOK:
+Kullanıcı: "Merhaba, nasılsınız?"
+→ {"topic": "other", "sentiment": "Nötr", "bot_answered": "Evet"}
+
+KONUŞMA: {conversation_text}
+
+ÖNEMLİ: Topic sadece şu formatlardan biri olabilir:
+- "etkinlik/kategori" (örn: düğün/fotoğrafçı, nişan/me1kan)
+- "etkinlik" (örn: düğün, balayı)  
+- "kategori" (örn: abiye, kuaför)
+- "other"
+
+Döndür: {"topic": "topic_değeri", "sentiment": "Nötr/Pozitif/Negatif", "bot_answered": "Evet/Hayır"}

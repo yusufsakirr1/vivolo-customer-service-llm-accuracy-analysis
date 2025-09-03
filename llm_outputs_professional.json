@@ -1,0 +1,402 @@
+[
+  {
+    "message_number": 1,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 2,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 3,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 4,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 5,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 6,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "NIŞAN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 7,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 8,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 9,
+    "llm_prediction": {
+      "sentiment": "POZİTİF",
+      "topic": "NIŞAN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 10,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 11,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 12,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 13,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 14,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "NIŞAN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 15,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 16,
+    "llm_prediction": {
+      "sentiment": "POZİTİF",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 17,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 18,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 19,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 20,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Hayır"
+  },
+  {
+    "message_number": 21,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "DİĞER DAVETLER"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 22,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 23,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 24,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 25,
+    "llm_prediction": {
+      "sentiment": "Negatif",
+      "topic": "MEZUNIYET"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 26,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "NIŞAN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 27,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 28,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 29,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 30,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "NIŞAN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 31,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "NIŞAN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 32,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "NIŞAN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 33,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 34,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 35,
+    "llm_prediction": {
+      "sentiment": "Negatif",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 36,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 37,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "NIŞAN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 38,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 39,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 40,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 41,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 42,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 43,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 44,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "DİĞER DAVETLER"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 45,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "DİĞER DAVETLER"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 46,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 47,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 48,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 49,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 50,
+    "llm_prediction": {
+      "sentiment": "Pozitif",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  }
+]

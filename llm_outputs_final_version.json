@@ -1,0 +1,74 @@
+[
+  {
+    "message_number": 4,
+    "llm_prediction": {
+      "sentiment": "Nötr",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 18,
+    "llm_prediction": {
+      "sentiment": "Nötr",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 19,
+    "llm_prediction": {
+      "sentiment": "Nötr",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 24,
+    "llm_prediction": {
+      "sentiment": "Nötr",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 28,
+    "llm_prediction": {
+      "sentiment": "Nötr",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 36,
+    "llm_prediction": {
+      "sentiment": "Nötr",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 40,
+    "llm_prediction": {
+      "sentiment": "Nötr",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 41,
+    "llm_prediction": {
+      "sentiment": "Nötr",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  },
+  {
+    "message_number": 44,
+    "llm_prediction": {
+      "sentiment": "Nötr",
+      "topic": "DÜĞÜN"
+    },
+    "actual_bot_answered": "Evet"
+  }
+]

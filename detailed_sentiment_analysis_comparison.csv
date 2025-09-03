@@ -1,0 +1,51 @@
+Konuşma No,Konuşma ID,LLM Sentiment,Manuel Sentiment,Match
+1,9f1fad6e,Nötr,Nötr,True
+2,9f1fb51c,Nötr,Nötr,True
+3,9f1fb55f,Nötr,Nötr,True
+4,9f1fc574,Nötr,Nötr,True
+5,9f1fd866,Nötr,Nötr,True
+6,9f1fda47,Nötr,Pozitif,False
+7,9f208c53,Nötr,Nötr,True
+8,9f209ce4,Nötr,Nötr,True
+9,9f20adf9,Nötr,Nötr,True
+10,9f20b600,Nötr,Nötr,True
+11,9f20bc62,Nötr,Nötr,True
+12,9f20d064,Nötr,Nötr,True
+13,9f211352,Nötr,Nötr,True
+14,9f2120f9,Nötr,Nötr,True
+15,9f216298,Nötr,Nötr ,True
+16,9f2163e4,Nötr,Nötr,True
+17,9f2193d3,Nötr,Nötr,True
+18,9f21967e,Nötr,Nötr,True
+19,9f21d05d,Nötr,Nötr,True
+20,9f21d0f2,Nötr,Nötr,True
+21,9f227c7c,Nötr,Nötr,True
+22,9f22e60c,Nötr,Nötr,True
+23,9f22fd33,Nötr,Nötr,True
+24,9f2300ed,Nötr,Nötr,True
+25,9f23488b,Nötr,Nötr,True
+26,9f2356ed,Nötr,Nötr,True
+27,9f236564,Nötr,Nötr,True
+28,9f239f9c,Nötr,Nötr,True
+29,9f24180f,Nötr,Nötr,True
+30,9f24d36d,Nötr,Nötr,True
+31,9f24d47a,Nötr,Nötr,True
+32,9f24e2a8,Nötr,Nötr,True
+33,9f252c88,Nötr,Nötr,True
+34,9f253790,Nötr,Nötr,True
+35,9f255140,Nötr,Nötr ,True
+36,9f25a4aa,Nötr,Nötr,True
+37,9f25b85b,Nötr,Nötr,True
+38,9f270cca,Nötr,Nötr,True
+39,9f275d6c,Nötr,Nötr,True
+40,9f275f9c,Nötr,Nötr ,True
+41,9f276569,Nötr,Nötr,True
+42,9f2769b8,Nötr,Nötr,True
+43,9f2792e9,Nötr,Nötr,True
+44,9f27b3c9,Nötr,Nötr,True
+45,9f27d8f1,Nötr,Nötr,True
+46,9f27fde7,Nötr,Nötr,True
+47,9f27fe9a,Nötr,Nötr,True
+48,9f287f40,Pozitif,Pozitif,True
+49,9f28b012,Pozitif,Pozitif,True
+50,9f28b667,Nötr,Nötr,True

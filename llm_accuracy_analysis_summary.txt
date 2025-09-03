@@ -1,0 +1,110 @@
+================================================================================
+LLM ACCURACY ANALYSIS FINAL REPORT
+================================================================================
+
+EXECUTIVE SUMMARY
+================================================================================
+This report analyzes the accuracy of Large Language Model (LLM) predictions 
+compared to manual labels across 50 conversations for three classification tasks:
+- Topic Classification
+- Sentiment Analysis  
+- Bot Answered Prediction
+
+DATASET OVERVIEW
+================================================================================
+- Total conversations analyzed: 50
+- Data source: llm_analysis_v7_final_results.numbers (converted to CSV)
+- Comparison categories: 3 (Topic, Sentiment, Bot Answered)
+- Total predictions evaluated: 150 (50 × 3 categories)
+
+DETAILED ACCURACY RESULTS
+================================================================================
+
+1. TOPIC CLASSIFICATION
+   Accuracy: 88.00% (44/50 correct predictions)
+   - Correct predictions: 44
+   - Incorrect predictions: 6
+   - Performance: GOOD
+   
+   Key Issues Identified:
+   - 6 mismatches found
+   - Common mistakes: confusing similar event types (düğün vs sünnet, 
+     nişan/mekan vs nişan)
+   - Specific misclassifications:
+     • Conversation 9: nişan/mekan → nişan
+     • Conversation 21: düğün/mekan → bekarlığa_veda/mekan  
+     • Conversation 27: düğün → balayı
+     • Conversation 30: düğün/mekan → nişan
+     • Conversation 35: düğün/mekan → sünnet
+     • Conversation 45: düğün → sünnet
+
+2. SENTIMENT ANALYSIS
+   Accuracy: 98.00% (49/50 correct predictions)
+   - Correct predictions: 49
+   - Incorrect predictions: 1
+   - Performance: EXCELLENT
+   
+   Key Issues Identified:
+   - Only 1 mismatch found (Conversation 6: predicted "Nötr" vs manual "Pozitif")
+   - Very high accuracy indicates LLM performs well at sentiment detection
+   - Limited sentiment categories (Nötr, Pozitif) may contribute to high accuracy
+
+3. BOT ANSWERED CLASSIFICATION
+   Accuracy: 68.00% (34/50 correct predictions)
+   - Correct predictions: 34
+   - Incorrect predictions: 16
+   - Performance: MODERATE/NEEDS IMPROVEMENT
+   
+   Key Issues Identified:
+   - 16 mismatches found - highest error rate among all categories
+   - Pattern: LLM tends to predict "Hayır" (No) when manual says "Evet" (Yes)
+   - 15 out of 16 errors are false negatives (predicted No when should be Yes)
+   - Only 1 false positive (predicted Yes when should be No)
+
+OVERALL PERFORMANCE
+================================================================================
+Total Accuracy: 84.67% (127/150 correct predictions)
+- Total predictions: 150
+- Total correct: 127  
+- Total incorrect: 23
+
+Ranking by Performance:
+1. Sentiment Analysis: 98.00% (Excellent)
+2. Topic Classification: 88.00% (Good)  
+3. Bot Answered: 68.00% (Needs Improvement)
+
+KEY FINDINGS & RECOMMENDATIONS
+================================================================================
+
+STRENGTHS:
+- High overall accuracy of 84.67%
+- Excellent sentiment analysis performance (98%)
+- Good topic classification accuracy (88%)
+- LLM shows strong pattern recognition for content categorization
+
+AREAS FOR IMPROVEMENT:
+- Bot Answered prediction needs significant improvement (68% accuracy)
+- Topic classification could benefit from better distinction between similar events
+- False negative bias in Bot Answered predictions needs addressing
+
+RECOMMENDATIONS:
+1. Focus improvement efforts on Bot Answered classification
+2. Analyze why LLM is conservative in predicting bot engagement
+3. Fine-tune topic classification for similar event types
+4. Consider additional training data for edge cases
+5. Review prompt engineering for Bot Answered predictions
+
+FILES GENERATED:
+================================================================================
+- /Users/yusufi/Desktop/Grispi Ödev/llm_analysis_v7_final_results.csv (main data)
+- /Users/yusufi/Desktop/Grispi Ödev/detailed_topic_classification_comparison.csv
+- /Users/yusufi/Desktop/Grispi Ödev/detailed_sentiment_analysis_comparison.csv  
+- /Users/yusufi/Desktop/Grispi Ödev/detailed_bot_answered_comparison.csv
+- /Users/yusufi/Desktop/Grispi Ödev/analyze_llm_accuracy.py (analysis script)
+- /Users/yusufi/Desktop/Grispi Ödev/llm_accuracy_analysis_summary.txt (this report)
+
+================================================================================
+Report Generated: September 3, 2025
+Analysis Tool: Python with pandas
+Original Data: Apple Numbers format (converted to CSV)
+================================================================================

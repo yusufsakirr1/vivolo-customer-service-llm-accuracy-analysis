@@ -1,0 +1,51 @@
+Konuşma No,Konuşma ID,LLM Bot Answered,Manuel Bot Answered,Match
+1,9f1fad6e,Hayır,Hayır,True
+2,9f1fb51c,Hayır,Hayır,True
+3,9f1fb55f,Hayır,Evet ,False
+4,9f1fc574,Evet,Evet ,True
+5,9f1fd866,Evet,Evet ,True
+6,9f1fda47,Evet,Evet,True
+7,9f208c53,Hayır,Evet,False
+8,9f209ce4,Hayır,Evet,False
+9,9f20adf9,Hayır,Hayır,True
+10,9f20b600,Hayır,Evet,False
+11,9f20bc62,Evet,Evet,True
+12,9f20d064,Hayır,Hayır,True
+13,9f211352,Hayır,Hayır,True
+14,9f2120f9,Hayır,Evet,False
+15,9f216298,Hayır,Hayır,True
+16,9f2163e4,Hayır,Evet,False
+17,9f2193d3,Hayır,Hayır,True
+18,9f21967e,Evet,Evet ,True
+19,9f21d05d,Evet,Evet,True
+20,9f21d0f2,Hayır,Evet,False
+21,9f227c7c,Hayır,Evet,False
+22,9f22e60c,Evet,Evet,True
+23,9f22fd33,Hayır,Evet,False
+24,9f2300ed,Evet,Evet,True
+25,9f23488b,Evet,Evet,True
+26,9f2356ed,Hayır,Hayır,True
+27,9f236564,Evet,Evet ,True
+28,9f239f9c,Evet,Evet,True
+29,9f24180f,Hayır,Hayır,True
+30,9f24d36d,Hayır,Evet,False
+31,9f24d47a,Evet,Evet,True
+32,9f24e2a8,Hayır,Hayır,True
+33,9f252c88,Hayır,Hayır,True
+34,9f253790,Hayır,Hayır,True
+35,9f255140,Hayır,Evet,False
+36,9f25a4aa,Evet,Evet,True
+37,9f25b85b,Hayır,Hayır,True
+38,9f270cca,Evet,Evet,True
+39,9f275d6c,Hayır,Hayır,True
+40,9f275f9c,Hayır,Evet,False
+41,9f276569,Hayır,Evet,False
+42,9f2769b8,Evet,Hayır,False
+43,9f2792e9,Hayır,Hayır,True
+44,9f27b3c9,Evet,Evet,True
+45,9f27d8f1,Hayır,Evet,False
+46,9f27fde7,Hayır,Hayır,True
+47,9f27fe9a,Evet,Evet,True
+48,9f287f40,Hayır,Evet,False
+49,9f28b012,Evet,Evet,True
+50,9f28b667,Evet,Evet,True
