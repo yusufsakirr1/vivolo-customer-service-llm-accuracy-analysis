@@ -149,7 +149,7 @@ This is a **student project** developed to demonstrate LLM evaluation techniques
 
 ## 📞 Contact
 
-- **Author:** Yusuf Şakir (Student)
+- **Author:** Yusuf Şakir
 - **Project:** Hera AI Customer Service Analysis
 - **Repository:** [GitHub](https://github.com/yusufsakir1/hera-ai-customer-service-llm-accuracy-analysis)
 
