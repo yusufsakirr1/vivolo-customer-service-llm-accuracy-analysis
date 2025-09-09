@@ -131,8 +131,8 @@ Bot: "Maalesef uygun fotoğrafçı bulamadık"
 → {"topic": "düğün/fotoğrafçı", "sentiment": "Nötr", "bot_answered": "Hayır"}
 
 ÖRNEK 3 - ETKİNLİK + KATEGORİ:
-Kullanıcı: "Sünnet organizasyonu yapmak istiyorum"
-→ {"topic": "sünnet/organizasyon", "sentiment": "Nötr", "bot_answered": "Evet"}
+Kullanıcı: "Sünnet düğünü yapmak istiyorum"
+→ {"topic": "sünnet", "sentiment": "Nötr", "bot_answered": "Evet"}
 
 ÖRNEK 4 - SADECE ETKİNLİK:
 Kullanıcı: "Balayı planlıyorum"
